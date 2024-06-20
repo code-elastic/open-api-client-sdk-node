@@ -18,9 +18,9 @@ import OpenClient from '@codeelastic/open-api-client-sdk-node';
 const client = new OpenClient('yourAppKey', 'yourAppSecret');
 
 // GET
-client.getNameByGet('exampleName');
+await client.getNameByGet('exampleName');
 
 // POST
-client.getNameByPost('exampleName');
+await client.getNameByPost('exampleName');
 ```
 
