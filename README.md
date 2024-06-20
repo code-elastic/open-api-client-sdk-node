@@ -13,14 +13,14 @@ npm install @codeelastic/open-api-client-sdk-node
 ## **快速使用**
 
 ```javascript
-const OpenClient = require('@codeelastic/open-api-client-sdk-node');
+import OpenClient from '@codeelastic/open-api-client-sdk-node';
 
 const client = new OpenClient('yourAppKey', 'yourAppSecret');
 
-// Example of GET request
+// GET
 client.getNameByGet('exampleName');
 
-// Example of POST request
+// POST
 client.getNameByPost('exampleName');
 ```
 

@@ -4,11 +4,10 @@
  * @File: genSign.py
  * @Description:
  */
-const crypto = require('crypto');
+import crypto from 'crypto';
 
 function genSign(body, secretKey) {
-    // 使用 md5 生成签名
     return crypto.createHash('md5').update(`${body}.${secretKey}`).digest('hex');
 }
 
-module.exports = genSign;
+export default genSign;

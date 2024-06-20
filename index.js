@@ -4,5 +4,6 @@
  * @File: index.js.py
  * @Description:
  */
-const OpenClient = require('./lib/openClient');
-module.exports = OpenClient;
+import OpenClient from './lib/openClient.js';
+
+export default OpenClient;

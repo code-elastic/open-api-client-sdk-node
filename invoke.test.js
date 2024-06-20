@@ -1,4 +1,7 @@
-const OpenClient = require('./index');
+import OpenClient from './index.js';
 
-new OpenClient('qwert123456', 'asdfgqwertzxcvb').getNameByPost('zzzzz')
+
+const client = new OpenClient('qwert123456', 'asdfgqwertzxcvb')
+await client.getNameByGet("hello1")
+await client.getNameByPost('hello2')
 
